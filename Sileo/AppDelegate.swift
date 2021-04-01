@@ -134,11 +134,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
             appVer += "-hackyA12"
         }
         #endif
-        SentrySDK.start { options in
-            options.dsn = "https://examplePublicKey@o0.ingest.sentry.io/0"
-            options.debug = true
-            options.releaseName = appVer
-        }
     }
     
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
